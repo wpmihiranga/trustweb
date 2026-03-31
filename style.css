@@ -184,6 +184,10 @@ nav{
     display: none;
   }
 
+    .logo {
+    pointer-events: none;
+    font-size: 1.2em;
+}
 
 }
 
