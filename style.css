@@ -5,35 +5,42 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
 }
+
+:root {
+  --header-height: 100px;
+}
+
+
 header{
-    /* max-height: 100px; */
-    box-sizing: border-box;
+    height: var(--header-height);
     position: sticky;
     width: 90%;
     max-width: 1200px;
     top: 10px;
     margin: 0 auto;
-    
     z-index: 10;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 18px;
+    padding-left: 30px;
+    padding-right: 30px;
     background:rgba(0, 0, 0, 0.149);
-     backdrop-filter: blur(50px);
-    /* border: solid rgb(111, 0, 255); */
-    border-radius: 30px; 
-        
-    }
+    backdrop-filter: blur(50px);
+    border-radius: 50px; 
     
-    .headerfonts, nav a, nav button{
+}
+
+
+
+.headerfonts, nav a, nav button{
      color: white;
     }
-
+    
   .logo {
     pointer-events: none;
     font-size: 1.7em;
@@ -71,9 +78,10 @@ nav{
     }
 
     .hero{
-        min-height: 100vh;
-        margin-top: -100px;
-        padding-top: 100px;
+        min-height: 100svh;
+        margin-top: calc(-1 * var(--header-height)); 
+        padding-top: var(--header-height);
+
 
   background: radial-gradient(
     circle at right center,
