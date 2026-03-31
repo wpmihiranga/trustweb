@@ -94,8 +94,8 @@ nav{
   background: radial-gradient(
     circle at right center,
     #6991ff,
-    #2a03db,
-    #6991ff
+    #0132b8,
+    #002999
   );
         display: grid;
         grid-template-columns: 1fr 1.7fr;
@@ -151,7 +151,7 @@ nav{
 
 .whatsapp-wrap {
     background-color: rgb(47, 186, 66);
-    border-radius: 30px;
+    border-radius: 50px;
 
     padding: 5px 15px 5px 15px;
   display: inline-flex;
