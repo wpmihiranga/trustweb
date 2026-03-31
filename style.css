@@ -62,7 +62,7 @@ nav{
 
     section{
         /* min-height: 500px; */
-        border: solid rgb(255, 152, 78);
+        /* border: solid rgb(255, 152, 78); */
         overflow: hidden;
         padding: 0;
         margin: 0;
@@ -93,7 +93,7 @@ nav{
         flex-direction: column;
         gap: 20px;
         color: white;
-        padding-left: 2rem;
+        padding-left: 50px;
         margin: 0;
     }
 
@@ -118,11 +118,11 @@ nav{
 
 #mobile-menu-btn{
     /* padding:4px 7px 4px 7px; */
-    background-color: #ffdd00;
-    color: #7609be;
+    background-color: #8905e8;
+    color: #92ff03;
     border: solid  rgb(0, 0, 0);
-    box-shadow: 0 2px 3px white;
-    height: 50px;          fixed height
+    box-shadow: 0 2px 3px rgb(255, 213, 0);
+    height: 50px;         /* fixed height*/
   line-height: 50px;     /* center the ☰ vertically */
   padding: 0 13px;      /* only horizontal padding */
 
