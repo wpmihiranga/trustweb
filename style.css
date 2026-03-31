@@ -1,0 +1,163 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+body{
+    font-family: Arial, sans-serif;
+    color: white;
+}
+    header{
+        display: flex;
+        max-height: 100px;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        background: radial-gradient(
+    circle at right center,
+    #5c0057,
+    #7609be,
+    #6a0260
+  );
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 18px;
+        
+    }
+
+  .logo {
+    pointer-events: none;
+    color: #21aaff;
+    font-size: 1.7em;
+}
+
+nav{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+    nav ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+       
+    }
+
+   .headerfonts, nav a, nav button{
+    color: white;
+   }
+
+    nav a{
+        
+        text-decoration: none;
+        
+    }
+
+    section{
+        /* min-height: 500px; */
+        border: solid rgb(255, 152, 78);
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero{
+        min-height: 70vh;
+
+  background: radial-gradient(
+    circle at right center,
+    #eb10e0,
+    /* #7609be, */
+    #6a0260
+  );
+        display: grid;
+        grid-template-columns: 1fr 1.7fr;
+        align-items: center;
+        padding: 10px;
+        gap: 8px;
+
+        
+        /* max-width: 1200px; */
+        
+    }
+
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+        padding-left: 2rem;
+        margin: 0;
+    }
+
+    .hero a{
+        text-decoration: none;
+        color: greenyellow;
+    }
+
+    .hero-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .hero-image{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+#mobile-menu-btn{
+    /* padding:4px 7px 4px 7px; */
+    background-color: #ffdd00;
+    color: #7609be;
+    border: solid  rgb(0, 0, 0);
+    box-shadow: 0 2px 3px white;
+    height: 50px;          fixed height
+  line-height: 50px;     /* center the ☰ vertically */
+  padding: 0 13px;      /* only horizontal padding */
+
+}
+
+
+nav button:active {
+  transform: translateY(2px);   /* 👈 actual push down */
+}
+
+
+
+
+
+/* HIDING THE BUTTON ALWAYS */
+
+#mobile-menu-btn {
+  display: none;
+}
+
+
+/* VIEW AT MOBILE DISPLAY */
+
+    @media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  #mobile-menu-btn{
+    display: block;
+  }
+
+  nav ul{
+    display: none;
+  }
+
+
+}
