@@ -26,6 +26,10 @@
     
   }
 
+    .hero-left h1 {
+    max-width: 10ch;
+  }
+
 
 
   .hero-left p:not(.eyebrow) {
