@@ -248,3 +248,39 @@ nav{
 #service{
     height: 100svh;
 }
+
+
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+
+  padding: 3px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  color: #fff;
+  text-decoration: none;
+
+  background: linear-gradient(135deg, #055c92, #3b73ff);
+  border-radius: 999px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  
+  transition: all 0.25s ease;
+}
+
+
+.cta-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+
+
+}
+
+.cta-btn:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
