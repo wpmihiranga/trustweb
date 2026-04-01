@@ -102,7 +102,7 @@ nav{
 
 
 .eyebrow {
-  font-size: clamp(0.75rem, 1vw, 0.95rem);
+  font-size: clamp(0.87rem, 2.2vw, 1.4rem);
   font-weight: 700;
   letter-spacing: 0.08em;
   /* text-transform: uppercase; */
@@ -154,7 +154,7 @@ nav{
     }
 
 .hero-left h1 {
-  font-size: clamp(1.9rem, 3.7vw, 3.2rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 0.97;
   letter-spacing: -0.03em;
   max-width: 20ch;
