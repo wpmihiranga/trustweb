@@ -28,12 +28,13 @@
 
     .hero-left h1 {
     max-width: 15ch;
+    line-height: 2.4rem;
   }
 
 
 
   .hero-left p:not(.eyebrow) {
-    max-width: min(40ch, 100%);
+    max-width: min(30ch, 100%);
   }
 
    .hero-image {
