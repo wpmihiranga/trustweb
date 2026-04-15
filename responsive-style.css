@@ -21,6 +21,11 @@
 
 }
 
+
+    .hero-title span {
+    display: block;
+  }
+
   .hero-left {
     max-width: 100%;
     padding: 0;
@@ -39,9 +44,10 @@
 
 
     .hero-left h1 {
-    max-width: 20ch;
-    line-height: 2.4rem;
-    font-size: clamp(14px, 8vw, 40px);
+    /* max-width: 20ch; */
+    /* line-height: 4rem; */
+    font-size: 72px;
+    /* font-size: clamp(14px, 8vw, 40px); */
   }
 
 
