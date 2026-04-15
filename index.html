@@ -22,10 +22,12 @@
 
 </head>
 <body>
+
+
     <header>
         <div  class="logo headerfonts">
-            <span class="main-text">TrustWeb |</span>
-            <span class="sub-text">Web Service</span>
+            <span class="main-text">TrustWeb Solutions</span>
+            <!-- <span class="sub-text">Web Service</span> -->
         </div>
         <nav>
             <ul >
@@ -49,21 +51,25 @@
             <div class="hero-grid">
                 
                     <div class="hero-left" >
-                            <p class="eyebrow">Grow Your Business online</p>
+                            <p class="section-eyebrow">Grow Your Business online</p>
                                 <h1>Trusted Web Design in Sri Lanka</h1>
-                                    <p class="hero-sub">Get a professional website that builds trust, works 
+                                    <p class="section-intro">Get a professional website that builds trust, works 
                                     perfectly on mobile, and brings the right customers to your business.</p> 
-                                        <p style="font-size: 18px;">Get a free quote<br><a href="https://wa.me/94777728779" id="whatsappbtn" class="cta-btn"> <span class="whatsapp-wrap" style="font-size: 18px;">
+                                    <div class="hero-cta">
+                                        <p class="hero-cta-text" >Get a free quote</p>
+                                          
+                                          <a href="#" class="hero-cta-btn wa-link" data-service="General Inquiry">
+                                            
                                             <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 241.19" aria-hidden="true">
                                                 <path fill="currentColor" d="M205,35.05A118.61,118.61,0,0,0,120.46,0C54.6,0,1,53.61,1,119.51a119.5,119.5,0,0,0,16,59.74L0,241.19l63.36-16.63a119.43,119.43,0,0,0,57.08,14.57h0A119.54,119.54,0,0,0,205,35.07v0ZM120.5,219A99.18,99.18,0,0,1,69.91,205.1l-3.64-2.17-37.6,9.85,10-36.65-2.35-3.76A99.37,99.37,0,0,1,190.79,49.27,99.43,99.43,0,0,1,120.49,219ZM175,144.54c-3-1.51-17.67-8.71-20.39-9.71s-4.72-1.51-6.75,1.51-7.72,9.71-9.46,11.72-3.49,2.27-6.45.76-12.63-4.66-24-14.84A91.1,91.1,0,0,1,91.25,113.3c-1.75-3-.19-4.61,1.33-6.07s3-3.48,4.47-5.23a19.65,19.65,0,0,0,3-5,5.51,5.51,0,0,0-.24-5.23C99,90.27,93,75.57,90.6,69.58s-4.89-5-6.73-5.14-3.73-.09-5.7-.09a11,11,0,0,0-8,3.73C67.48,71.05,59.75,78.3,59.75,93s10.69,28.88,12.19,30.9S93,156.07,123,169c7.12,3.06,12.68,4.9,17,6.32a41.18,41.18,0,0,0,18.8,1.17c5.74-.84,17.66-7.21,20.17-14.18s2.5-13,1.75-14.19-2.69-2.06-5.7-3.59l0,0Z"/>
                                             </svg>
-                                                    WhatsApp</span></a></p>
+                                                   <span> WhatsApp</span></a></div>
 
                     </div>
 
             
 
-                    <div class="hero-image"><img src="./images/hero-image-1.png" alt=""></div>
+                    <div class="hero-image"><img src="./images/hero-image-2.png" alt=""></div>
             
                     
             </div>
@@ -89,6 +95,7 @@
 
         <div class="feature-grid">
       <article class="feature-card">
+        <div class="feature-icon"><img src="images/icons/prowebsite.svg" alt="wireframe image of a web-layout"></div>
         <h3>Professional Website</h3>
         <p>
           A clean business website designed to make your brand look more
@@ -97,6 +104,7 @@
       </article>
 
       <article class="feature-card">
+        <div class="feature-icon"><img src="images/icons/mobile-friendly.svg" alt="a hand holding a mobile device"></div>
         <h3>Mobile Friendly Design</h3>
         <p>
           Your website will work smoothly on phones, tablets, and desktops so
@@ -105,6 +113,7 @@
       </article>
 
       <article class="feature-card">
+        <div class="feature-icon"><img src="images/icons/setup.svg" alt="a digital cloud connected to web"></div>
         <h3>Hosting & Setup Help</h3>
         <p>
           We help connect your domain, hosting, email, and the basic setup so
@@ -113,6 +122,7 @@
       </article>
 
       <article class="feature-card">
+      <div class="feature-icon"><img src="images/icons/shield.svg" alt="shield"></div>
         <h3>You Own It 100%</h3>
         <p>
           No hidden lock-in. Your website belongs to you, and you stay in control
@@ -209,19 +219,9 @@
     </main>
 
 
-    <script>
-  const whatsappNumber = "94777728779";
 
-  const waLinks = document.querySelectorAll(".wa-link");
 
-  waLinks.forEach(link => {
-    const service = link.dataset.service;
-    const message = `Hi, I found your website and I want to request the ${service} service.\n\nCan you share more details?`;
-    const encodedMessage = encodeURIComponent(message);
-
-    link.href = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-  });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
 

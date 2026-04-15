@@ -13,6 +13,8 @@
   --font-xl: 28px;
 
 
-
+    --container-width: 1200px;
+  --section-padding: clamp(4rem, 8vw, 7rem);
+  --card-radius: 1.25rem;
 
 }
