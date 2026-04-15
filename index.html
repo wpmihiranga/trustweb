@@ -130,7 +130,7 @@
   <div class="container">
     <p class="section-eyebrow">Services</p>
 
-    <h2>Website services built for real business needs</h2>
+    <h2>Web services built for real business needs</h2>
 
     <p class="section-intro">
       Whether you need a complete business website, a focused landing page, or
@@ -154,7 +154,9 @@
           <li>Clean layout built for trust</li>
         </ul>
 
-        <a href="https://wa.me/94777728779" class="service-link">Request this service</a>
+        <a href="#" class="service-link wa-link" data-service="Business Website">
+  Request this service
+</a>
       </article>
 
       <article class="service-card service-card-highlight">
@@ -172,7 +174,9 @@
           <li>Ideal for quick online presence</li>
         </ul>
 
-        <a href="https://wa.me/94777728779" class="service-link">Request this service</a>
+      <a href="#" class="service-link wa-link" data-service="Landing Page">
+  Request this service
+</a>
       </article>
 
       <article class="service-card">
@@ -190,7 +194,9 @@
           <li>Basic technical assistance</li>
         </ul>
 
-        <a href="https://wa.me/94777728779" class="service-link">Request this service</a>
+     <a href="#" class="service-link wa-link" data-service="Website Setup & Support">
+  Request this service
+</a>
       </article>
     </div>
   </div>
@@ -201,6 +207,21 @@
     <section id="contact"></section>
    
     </main>
+
+
+    <script>
+  const whatsappNumber = "94777728779";
+
+  const waLinks = document.querySelectorAll(".wa-link");
+
+  waLinks.forEach(link => {
+    const service = link.dataset.service;
+    const message = `Hi, I found your website and I want to request the ${service} service.\n\nCan you share more details?`;
+    const encodedMessage = encodeURIComponent(message);
+
+    link.href = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+  });
+</script>
 </body>
 </html>
 
