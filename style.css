@@ -12,15 +12,18 @@
 
 body{
     /* font-family:'Lato', sans-serif; */
-    font-family: "Noto Sans", sans-serif;
+    /* font-family: "Noto Sans", sans-serif; */
+     font-family: "Manrope", sans-serif;
     font-style: normal;
-    color: white;
+    color: #F8F5FF;
+    background: #ffffff;
 
 }
 
 h1, h2, h3 {
     /* font-family: 'Playfair Display', serif; */
-    font-family: "Noto Sans", sans-serif;
+    /* font-family: "Noto Sans", sans-serif; */
+     font-family: "Manrope", sans-serif;
 
 }
 
@@ -58,11 +61,12 @@ header{
     line-height: 1.1;
     pointer-events: none;
     font-size: 1.2em;
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
+     font-family: "Manrope", sans-serif;
 }
 
 .logo .main-text{
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
   font-weight: 600;
   
 }
@@ -172,14 +176,16 @@ nav{
 
 
 
+
 .hero-left h1 {
-  font-size: clamp(2.9rem, 4.4vw, 80px);
+  font-size: clamp(3.6rem, 12vw, 80px);
   /* font-size: 72px; */
-  line-height:4rem;
+  /* line-height:clamp(3.3rem, 12vw, 4.5rem); */
+  line-height:1;
   /* line-height: 0.97; */
   /* letter-spacing:-0.031em; */
-  max-width: 15ch;
-  letter-spacing: 0.2rem;
+  /* max-width: 15ch; */
+  /* letter-spacing: -0.2rem; */
 }
 
 .hero-title span {

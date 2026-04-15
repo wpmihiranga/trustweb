@@ -1,14 +1,14 @@
   @media (max-width: 768px) {
 
      :root {
-       --header-height: 80px;
+       --header-height: 70px;
        --header-offset: 10px;
      }
 
-
+/* 
      header{
-      height: var(--header-height);
-     }
+      min-height: var(--header-height);
+     } */
 
   .hero-grid {
 
@@ -25,12 +25,13 @@
     .hero-title span {
     display: block;
   }
-
+  
+  
   .hero-left {
     max-width: 100%;
     padding: 0;
   }
-
+  
   .hero-image {
     width: 100%;
     max-width: 489px;
@@ -38,17 +39,17 @@
     margin-top: -2rem;
     justify-self: center;
   }
-
-
-
-
-
-    .hero-left h1 {
-    /* max-width: 20ch; */
-    /* line-height: 4rem; */
-    font-size: 72px;
-    /* font-size: clamp(14px, 8vw, 40px); */
-  }
+  
+  
+ 
+  
+  /* .hero-left h1 {
+      font-size: 50px;
+      font-size: 72px;
+    max-width: 20ch;
+    line-height: 5rem;
+    font-size: clamp(14px, 8vw, 40px);
+  } */
 
 
 
