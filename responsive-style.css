@@ -43,13 +43,11 @@
   
  
   
-  /* .hero-left h1 {
-      font-size: 50px;
-      font-size: 72px;
-    max-width: 20ch;
-    line-height: 5rem;
-    font-size: clamp(14px, 8vw, 40px);
-  } */
+  .hero-left h1 {
+
+    line-height: 1.2;
+
+  }
 
 
 
