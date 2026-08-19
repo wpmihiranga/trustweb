@@ -1,5 +1,5 @@
 :root {
-  --header-height: 100px;
+  --header-height: 80px;
   --header-offset: 10px;
 
  --space-sm: 8px;
@@ -17,4 +17,13 @@
   --section-padding: clamp(4rem, 8vw, 7rem);
   --card-radius: 1.25rem;
 
+
+
+    --base-gradient:linear-gradient(135deg, #055c92, #3b73ff);
+       --button-bg:var(--base-gradient);
 }
+
+
+   html{
+      scroll-padding-top: 100px;
+     }
