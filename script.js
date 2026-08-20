@@ -15,22 +15,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // Header scroll behavior
-  const header = document.querySelector("header");
+//   const header = document.querySelector("header");
 
-  if (!header) return; // safety guard
+//   if (!header) return; // safety guard
 
-  let lastScrollY = window.scrollY;
+//   let lastScrollY = window.scrollY;
 
-  window.addEventListener("scroll", () => {
-    const currentScrollY = window.scrollY;
+//   window.addEventListener("scroll", () => {
+//     const currentScrollY = window.scrollY;
 
-    if (currentScrollY > lastScrollY && currentScrollY > 100) {
-      header.classList.add("hide");
-    } else {
-      header.classList.remove("hide");
-    }
+//     if (currentScrollY > lastScrollY && currentScrollY > 100) {
+//       header.classList.add("hide");
+//     } else {
+//       header.classList.remove("hide");
+//     }
 
-    lastScrollY = currentScrollY;
-  });
+//     lastScrollY = currentScrollY;
+//   });
 
+// });
+
+
+
+
+// Header scroll behavior
+const header = document.querySelector("header");
+
+if (!header) return; // safety guard
+
+// Define the media query breakpoint
+const mediaQuery = window.matchMedia("(min-width: 768px)");
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  // If the screen is smaller than 768px, stop execution here 
+  // and clear the 'hide' class just in case it was left open
+  if (!mediaQuery.matches) {
+    header.classList.remove("hide");
+    return;
+  }
+
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY > lastScrollY && currentScrollY > 100) {
+    header.classList.add("hide");
+  } else {
+    header.classList.remove("hide");
+  }
+
+  lastScrollY = currentScrollY;
 });
