@@ -29,21 +29,59 @@
 
 
 
-
-  #mobile-menu-btn{
+/* OLDSTYLE MOBILE MENU */
+  /* #mobile-menu-btn{
     display: block;
   }
 
   nav ul{
     display: none;
-  }
+  } */
 
 
+header{
+  position:fixed;
+  top:auto;
+  bottom:10px;
+  left:50%;
+  transform:translateX(-50%);
+ 
 
-
-
+  
 }
 
+header nav{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+header nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+}
+
+
+header .logo{
+  display:none;
+}
+/* 
+header .logo::after{
+  display:block;
+  position:absolute;
+  content:"TWS";
+  font-size:1.2rem;
+  font-weight:600;
+  color:white;
+  letter-spacing:0.5px;
+  text-transform:uppercase;
+} */
+
+
+
+  }
 
 
 
