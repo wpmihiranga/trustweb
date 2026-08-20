@@ -217,14 +217,31 @@ nav{
   padding: 0.32rem 0.35rem 0.32rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: 999px;
+  white-space: nowrap;
+}
+
+:is(.hero-cta span, .hero-cta-btn){
+ font-size: clamp(0.82rem, 3vw, 1rem);
+}
+
+.hero-cta span {
+  white-space: nowrap;
 
 }
 
+.hero-cta-btn {
+  gap: clamp(0.3rem, 2vw, 0.4rem);
+  padding: clamp(0.5rem, 3vw, 0.7rem) clamp(0.65rem, 3vw, 1rem);
 
 
+}
 
-#whatsappbtn{
-    color: white ;
+.whatsapp-icon {
+    /* width: clamp(14px, 4vw, 18px);
+  height: clamp(14px, 4vw, 18px); */
+  width: clamp(0.82rem, 3vw, 1rem);
+  height: clamp(0.82rem, 3vw, 1rem);
+  flex-shrink: 0;
 }
 
 /* HIDING THE BUTTON ALWAYS */
@@ -285,11 +302,7 @@ nav{
   transform: translateY(0);
 }
 
-.whatsapp-icon {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-}
+
 
 
 
@@ -355,11 +368,13 @@ nav{
 
 
 
-.feature-grid {
+.feature-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
 }
+
 
 .feature-card {
   background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
@@ -549,13 +564,19 @@ justify-content:space-between;
   width:100%;
   top: 0;
   font-size: 1.2rem;
-  font-weight: bold;
+
   color: white;
   background-color: rgb(2, 0, 68);
   padding: 0.5rem 1rem;
 
 }
 
+
+.mobile-logo .web-title {
+
+  font-weight: bold;
+
+}
 .mobile-logo a{
 text-decoration:none;
 color: white;
