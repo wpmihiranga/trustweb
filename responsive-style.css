@@ -19,10 +19,8 @@ nav ul.open {
   left:50%;
   transform: translate(-50%);
 
-  align-items: stretch;
   padding: 20px;
   border-radius: 20px;
-  /* position, background, spacing etc. — match your design */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
@@ -30,15 +28,20 @@ nav ul.open {
   nav ul.open li{
    
     width: 100%;
-    height: 100%;;
+  
     
+    /* margin-bottom: 20px; */
     
   }
+
+   nav ul.open li:not(:last-child){
+     margin-bottom: 20px;
+
+   }
   
   nav ul.open a{
     display: block;
     font-size: 2rem;
-    /* margin-bottom: 20px; */
 
   }
 
