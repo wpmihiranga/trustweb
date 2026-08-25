@@ -19,12 +19,55 @@
 
 
 
-    --base-gradient:linear-gradient(135deg, #055c92, #3b73ff);
+  /* ==========new and improved=============
+   */
+     --base-clr: #0a2540;
+
+  --vanilla: #f6f5ae;
+  --yellow: #f5f749;
+  --redish: #f24236;
+
+  /* --lightblue1: #2e86ab;
+  --lightblue2: #54f2f2; */
+
+  /* --lightblue1: #144b82;
+  --lightblue2: #023262;
+  --lightblue3: #243c53; */
+
+  --lightblue1: #4e9ae6;
+  --lightblue2: #4e9ae6;
+  --lightblue3: #4e9ae6;
+
+  /* =============end================ */
+
+
+/* WEB COLOR THEME */
+/* --base-clr:#0a2540; */
+--light-clr:2e86ab;
+--vanilla-clr:#f6f5ae;
+--yellow-clr:#F5F749;
+--redish-clr:#F24236;
+    /* --base-gradient:linear-gradient(135deg, #055c92, #3b73ff); */
+    /* --base-gradient:repeating-linear-gradient(-40deg,#055c92 0%,#055c92 20%, #3b73ff 20%, #3b73ff 40%); */
+    --base-gradient:repeating-linear-gradient(-40deg, #0a2540 0%, #1e5f9e 10%, #1e5f9e 12%, #0a2540 80%);
        --button-bg:var(--base-gradient);
-}
+
+
+
+    --mobile-top-clr: #0a2540;
+
+    --button-clr1:#1e5f9e;
+
+
+
+    }
+
+
 
 
    html{
       scroll-padding-top: 100px;
        scroll-behavior: smooth;
      }
+
+     

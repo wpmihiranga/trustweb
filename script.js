@@ -8,60 +8,52 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const message = service
       ? `Hi, I found your website and I want to request the ${service} service.\n\nCan you share more details?`
-      : `Hi, I found your website and I’d like to know more.`;
+      : `Hi, I found your website and I'd like to know more.`;
 
     link.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   });
 
 
   // Header scroll behavior
-//   const header = document.querySelector("header");
+  const header = document.querySelector("header");
+  const HIDE_THRESHOLD = 300;
 
-//   if (!header) return; // safety guard
+  if (header) {
+    let lastScrollY = window.scrollY;
 
-//   let lastScrollY = window.scrollY;
+    window.addEventListener("scroll", () => {
+      const currentScrollY = window.scrollY;
 
-//   window.addEventListener("scroll", () => {
-//     const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY && currentScrollY > HIDE_THRESHOLD) {
+        // scrolling down past the threshold — hide
+        header.classList.add("hide");
+      } else if (currentScrollY < lastScrollY) {
+        // scrolling up — reveal
+        header.classList.remove("hide");
+      }
 
-//     if (currentScrollY > lastScrollY && currentScrollY > 100) {
-//       header.classList.add("hide");
-//     } else {
-//       header.classList.remove("hide");
-//     }
-
-//     lastScrollY = currentScrollY;
-//   });
-
-// });
-
-
-
-
-// Header scroll behavior
-const header = document.querySelector("header");
-
-if (!header) return; // safety guard
-
-// Define the media query breakpoint
-const mediaQuery = window.matchMedia("(min-width: 768px)");
-let lastScrollY = window.scrollY;
-
-window.addEventListener("scroll", () => {
-  // If the screen is smaller than 768px, stop execution here 
-  // and clear the 'hide' class just in case it was left open
-  if (!mediaQuery.matches) {
-    header.classList.remove("hide");
-    return;
+      lastScrollY = currentScrollY;
+    });
   }
 
-  const currentScrollY = window.scrollY;
 
-  if (currentScrollY > lastScrollY && currentScrollY > 100) {
-    header.classList.add("hide");
-  } else {
-    header.classList.remove("hide");
+  // Mobile menu toggle
+  const menuBtn = document.querySelector("#mobile-menu-btn");
+  const navMenu = document.querySelector("nav ul");
+
+  if (menuBtn && navMenu) {
+    menuBtn.addEventListener("click", () => {
+      const isOpen = navMenu.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", isOpen);
+    });
+
+    // Close the menu when a nav link is tapped (common mobile UX expectation)
+    navMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("open");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
   }
 
-  lastScrollY = currentScrollY;
 });

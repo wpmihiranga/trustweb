@@ -8,6 +8,44 @@
 
 
   
+nav ul.open {
+
+  display: block;
+ 
+  position: fixed;
+  top:var(--header-height);
+  background-color: var(--base-clr);
+  width:95%;
+  left:50%;
+  transform: translate(-50%);
+
+  align-items: stretch;
+  padding: 20px;
+  border-radius: 20px;
+  /* position, background, spacing etc. — match your design */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+  nav ul.open li{
+   
+    width: 100%;
+    height: 100%;;
+    
+    
+  }
+  
+  nav ul.open a{
+    display: block;
+    font-size: 2rem;
+    /* margin-bottom: 20px; */
+
+  }
+
+  nav ul.open a:hover{
+    color:var(--yellow);
+    background:brown;
+  }
 
 
   .content {
@@ -30,49 +68,41 @@
 
 
 /* OLDSTYLE MOBILE MENU */
-  /* #mobile-menu-btn{
+  #mobile-menu-btn{
     display: block;
   }
 
   nav ul{
     display: none;
-  } */
+  }
 
  /* BOTOOM NAVIGATION BAR STYLE */
 header{
   position:fixed;
   top:auto;
-  bottom:0px;
-  left:50%;
-  transform:translateX(-50%);
+  /* bottom:0px; */
+ 
   width:100%;
   border-radius: unset;
-  background:var(--base-gradient);
+
   overflow:hidden
   
 }
 
-header nav{
+/* header nav{
   display: flex;
   justify-content: center;
   width: 100%;
-}
+} */
 
 
-header::before{
-  content:"< ";
-  display:block;
-  padding-right:4px;
-  margin:0;
 
-}
-
-header nav ul{
+/* header nav ul{
   display:flex;
   flex-direction:row;
   justify-content:space-evenly;
   overflow-x: scroll;
-}
+} */
 
 
 
@@ -81,9 +111,7 @@ header nav ul::-webkit-scrollbar{
 }
 
 
-header .logo{
-  display:none;
-}
+
 /* 
 header .logo::after{
   display:block;
@@ -118,9 +146,13 @@ header .logo::after{
        flex-wrap: wrap;
     }
 
+header{
+  top:0;
 
+  width:100%;
+}
 
-    .mobile-logo{
+    .mobile-top-bar{
       display:none; 
     }
 
@@ -130,8 +162,20 @@ header .logo::after{
   margin-right:auto;
 
 }
+.service-grid{
+  flex-direction: row;
+  justify-content: flex-start;
+}
 
+.service-grid::after{
+content:"";
+display: block;
+flex: 1 1 380px;
+}
 
+.service-card {
+  flex: 1 1 380px; /* grow | shrink | basis */
+}
 
 
 
@@ -146,6 +190,8 @@ flex-basis: 45%;
 /* overflow: hidden; */
 }
 
+
+
   
   }
 
@@ -155,24 +201,22 @@ flex-basis: 45%;
 @media (max-width: 900px) {
 
 
-      .feature-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-   .service-grid {
-    grid-template-columns: 1fr;
+
+   /* .service-grid {
+    grid-template-columns: 3fr;
   }
 
    .service-card-highlight {
     transform: none;
-  }
+  } */
+
+
 }
 
 
 @media(min-width: 1024px){
-    header{
-        width: 70%;
-    }
+  
 
 
 
