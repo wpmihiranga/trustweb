@@ -20,16 +20,15 @@ body{
 
 
 
-
 header{
  position: sticky;
 z-index: 999;
- font-weight: 600;
+ /* font-weight: 600; */
  font-size: 1.3rem;
     max-height: var(--header-height);
     width: 100%;
     /* max-width: 1200px; */
-    top: 10px;
+    /* top: 10px; */
     margin: 0 auto;
    
     
@@ -164,6 +163,7 @@ nav{
   text-align: center;
   overflow: hidden;
   min-height: fit-content;
+  padding-inline: clamp(24px, 5vw, 64px) ;
 }
 
 .blob {
@@ -197,12 +197,12 @@ nav{
 .wrap {
   position: relative;
 
-  color: white;
+  color: whitesmoke ;
   z-index: 100;
 
-  max-width: 1160px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 24px;
+  
 }
 
 .eye-brow {
@@ -210,8 +210,8 @@ nav{
 }
 
 .sub {
-  max-width: 660px;
-  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  max-width: 800px;
+  font-size: clamp(1.25rem, 5vw, 1.5rem);
   margin: 36px auto;
   line-height: 1.6;
 }
@@ -224,13 +224,13 @@ nav{
 }
 
 .hero h1 {
-  font-size: clamp(2.4rem, 6vw, 4.3rem);
+  font-size: clamp(3rem, 5vw, 4.5rem);
   margin-bottom: 22px;
-  font-weight: normal;
+  font-weight: 800;
 }
 
 .hero .trust {
-  display: flex;
+  display: none;
   justify-content: center;
   gap: clamp(18px, 3.2vw, 50px);
   flex-wrap: wrap;
@@ -446,6 +446,7 @@ span.icon-text {
   padding-block: var(--section-padding);
   background: var(--yellow);
   color: #1a1a1a;
+  padding-inline: clamp(24px, 5vw, 64px) ;
 }
 
 /* SECTION INTRODUCTION STYLINGS */

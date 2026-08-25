@@ -21,7 +21,7 @@
 
   /* ==========new and improved=============
    */
-     --base-clr: #0a2540;
+     /* --base-clr: #0a2540; */
 
   --vanilla: #f6f5ae;
   --yellow: #f5f749;
@@ -42,7 +42,7 @@
 
 
 /* WEB COLOR THEME */
-/* --base-clr:#0a2540; */
+--base-clr:hsl(212, 100%, 13%);
 --light-clr:2e86ab;
 --vanilla-clr:#f6f5ae;
 --yellow-clr:#F5F749;
